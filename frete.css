@@ -80,3 +80,11 @@
     background-color: #ccc;
     cursor: default;
   }
+  .icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+}
