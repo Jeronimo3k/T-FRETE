@@ -1,0 +1,82 @@
+.container {
+    font-family: Arial, sans-serif;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  fieldset {
+    margin-top: 20px;
+    border: none;
+    padding: 0;
+  }
+  
+  legend {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .form-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  
+  .label-value-pair {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  input[type="number"] {
+    width: 100px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  input[type="number"]:focus {
+    outline: none;
+    border-color: #008cba;
+  }
+  
+  input[type="number"]:invalid {
+    border-color: red;
+  }
+  
+  input[type="submit"] {
+    background-color: #008cba;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #005c7a;
+  }
+  
+  input[type="submit"]:disabled {
+    background-color: #ccc;
+    cursor: default;
+  }
