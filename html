@@ -1,9 +1,30 @@
 <template>
-    <div>
-        <label>Distância:</label>
-        <input type="number" value={distance} oninput={handleDistanceChange} />
-        <label>Quantidade:</label>
-        <input type="number" value={quantity} oninput={handleQuantityChange} />
-        <div>Frete: {freight}</div>
+    <div class="container">
+        <form>
+            <fieldset>
+                <legend>Informações do pedido:</legend>
+                <div class="form-item">
+                    <label for="distancia">Distância (em Km): </label>
+                    <input type="number" id="distancia" value={distancia} oninput={handleDistanceChange} required title="Preencha a distância" />
+                </div>
+                <div class="form-item">
+                    <label for="quantidade">Quantidade (do produto): </label>
+                    <input type="number" id="quantidade" value={quantidade} oninput={handleQuantityChange} />
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Informações de entrega:</legend>
+                <div class="form-item">
+                    <div class="label-value-pair">
+                        <label>Frete:</label>
+                        <div>R$ {frete}</div>
+                    </div>
+                    <div class="label-value-pair">
+                        <label>Tempo estimado de entrega:</label>
+                        <div>{tempoEntrega} dias</div>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
     </div>
 </template>
