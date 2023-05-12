@@ -24,7 +24,7 @@ export default class FreightCalculator extends LightningElement {
 
 calculateFreight() {
   const DISTANCIA_POR_KM = 0.5; // Custo do frete por km
-  const DIAS_POR_KM = 0.005; // Tempo de entrega em dias por km
+  const DIAS_POR_KM = 0.0005; // Tempo de entrega em dias por km
 
   // Obtém os valores dos campos de entrada do formulário
   const distancia = parseFloat(this.distancia);
